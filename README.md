@@ -47,6 +47,30 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for:
 - runtime data layout
 - troubleshooting
 
+## Third-Party Boundary
+
+This project reuses part of Tencent's official OpenClaw Weixin plugin as a transport layer.
+
+Current boundary is:
+
+- reused from Tencent plugin:
+  - WeChat QR login flow
+  - WeChat message polling
+  - WeChat message sending
+- implemented in this repository:
+  - bridge worker logic
+  - local Codex CLI integration
+  - transcript logging
+  - transcript viewer
+  - WeChat-side approval workflow
+
+Notes:
+
+- the locally installed Tencent package is `@tencent-weixin/openclaw-weixin`
+- the installed package metadata declares `MIT` license
+- the plugin package itself ships source files such as `src/`, plus `README` and `LICENSE`
+- this repository does not claim ownership of Tencent's backend service infrastructure behind the plugin protocol
+
 ## Notes
 
 This repository is being generalized from an initial Codex-only bridge toward a multi-backend design.
