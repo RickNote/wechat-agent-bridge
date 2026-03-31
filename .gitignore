@@ -1,0 +1,17 @@
+node_modules/
+runtime/
+data/
+
+.DS_Store
+*.log
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+.idea/
+.vscode/

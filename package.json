@@ -1,0 +1,11 @@
+{
+  "name": "wechat-agent-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "login": "node ./scripts/login.mjs",
+    "bridge": "node ./scripts/run-bridge.mjs",
+    "viewer": "node ./scripts/run-viewer.mjs"
+  }
+}
