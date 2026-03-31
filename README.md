@@ -33,8 +33,19 @@ Runtime state is intentionally excluded from git:
 At minimum:
 
 ```bash
-SUB2API_KEY=...
+YOUR_PROVIDER_KEY=
 ```
+
+## Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for:
+
+- first-time WeChat login
+- systemd user services
+- transcript viewer setup
+- Nginx reverse proxy
+- runtime data layout
+- troubleshooting
 
 ## Notes
 
